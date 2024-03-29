@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problems Submitting an App made with Expo to the App Store</title>
+    <meta name="author" content="Daniel Terrero">
+    <!-- Change this for each blog -->
+    <meta name="keywords" content="Problems Submitting an App made with Expo to the App Store - Daniel Terrero">
+    <meta name="description" content="Explore the challenges faced while developing a labor app management system, from using Expo Go to debugging crashes on TestFlight. Gain insights into troubleshooting React Navigation issues for a smoother user experience."></meta>
+    <meta property="og:title" content="Problems Submitting an App made with Expo to the App Store" />
+    <meta name="og:description" content="Explore the challenges faced while developing a labor app management system, from using Expo Go to debugging crashes on TestFlight. Gain insights into troubleshooting React Navigation issues for a smoother user experience."></meta>
+    <meta property=" og:url " content="https://danielterrero.co/blogs/problems-submiting-expo-app-store.html" />
+
+
+    <meta property="og:site_name " content="Daniel Terrero ">
+    <meta content="../assets/D.png " property="og:image " />
+    <meta content="../assets/D.png " property="twitter:image " />
+    <meta property="og:type " content="website " />
+    <link rel="shortcut icon " href="../assets/D.png ">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+            /* Decreased margin */
+            font-weight: 600;
+            /* Increased font density */
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 0.3em;
+        }
+        
+        p {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+        }
+        
+        .permalink {
+            font-size: 0.8em;
+            /* Smaller font size */
+            color: #333;
+            /* Darker color */
+            text-decoration: none;
+        }
+        
+        .permalink:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E3YMZX6Z52"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E3YMZX6Z52');
+</script>
+
+<body>
+    <article>
+        <h1><a href="/ " style="text-decoration: none; color: inherit; ">Daniel Terrero</a></h1>
+        <a href="../blogs.html " class="permalink " style="float: right; ">Back to Archive</a>
+        <h2>Problems Submitting an App made with Expo to the App Store</h2>
+        <p>
+            Continuing the lore of the labor app management I  am making. Since I have a Windows, I was using Expo Go to develop everything regarding the app except the database which I build using Django. So after finishing the website and app, I was ready to submit to the App Store so I could test it on TestFlight.</p>
+
+        <p>
+            I did everything I was supposed to, ending with downloading the app from TestFlight. It crashes right when I touch the icon. I was so confused. It had never crashed before until I had it on TestFlight. Therefore I start searching on Google "Expo Go app crashing on ios" and I search for a while until I found a post that looks like this:</p>
+
+        <p>
+            " When using @react-navigation/native you will need multiple packages. I missed this when reading the documentation. You will want to ensure you install: </p>
+
+        <p>
+            npx expo install react-native-screens react-native-safe-area-context @react-native-community/masked-view react-native-gesture-handler react-native-safe-area-context react-native-reanimated " </p>
+
+        <p>
+            I decided to download the packages, upload to TestFlight the updated version, and it worked.</p>
+        
+        <p>
+            Tomorrow I have a meeting to show the app to the first company we talked to. We will see if they are ready to use it.</p>
+
+    </article>
+
+</body>
+
+</html>
